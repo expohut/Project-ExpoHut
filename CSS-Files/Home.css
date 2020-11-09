@@ -226,7 +226,7 @@ h1,h2,h3,h4,h5,h6
 {
   flex-basis: 22%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 25px 10px;
   box-shadow: 2px 2px 3px #ceced1,
               -2px -2px 3px #ffffff;
@@ -293,4 +293,112 @@ h1,h2,h3,h4,h5,h6
   line-height: 0px;
   display: inline;
   transition: .5s;
+}
+
+/*About Expohut CSS Code*/
+.About-Expohut
+{
+  background: var(--Theme-Color);
+  padding: 25px 0;
+}
+.About-Items
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.About-Left
+{
+  flex-basis: 70%;
+  margin-right: 20px;
+}
+.About-Left h4,
+.About-Side-Menu h4
+{
+  text-transform: capitalize;
+  font-size: 25px;
+  color: var(--Second-Primary-Color);
+}
+.About-Left .subtitle
+{
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--Title-Font-Color);
+  letter-spacing: 2px;
+}
+.About-Left p
+{
+  color: var(--Title-Font-Color);
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 25px;
+}
+.About-Left a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--Second-Primary-Color);
+  background: var(--Theme-Color);
+  padding: 12px 25px;
+  display: inline-block;
+  box-shadow: 2px 2px 3px #025857ce,
+              -2px -2px 3px #43c5bf;
+  border-radius: 3px;
+  transition: .5s;
+}
+.About-Left a:hover
+{
+  box-shadow: inset 1px 1px 2px#025857ce,
+              inset -1px -1px 2px#43c5bf;
+}
+.About-Left a:hover .About-btn
+{
+  display: block;
+  transform: scale(.97);
+}
+.About-Side-Menu
+{
+  flex-basis: 20%;
+}
+.About-Side-Menu ul
+{
+  margin-top: 10px;
+  list-style: none;
+}
+.About-Side-Menu ul li
+{
+  border-bottom: 1px solid var(--Second-Primary-Color);
+}
+.About-Side-Menu ul li:last-child
+{
+  border-bottom: 0;
+}
+.About-Side-Menu ul li a
+{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 530;
+  color: var(--Subtitle-Font-Color);
+  display: block;
+  padding: 8px 0;
+  margin: 8px 0px;
+  transition: .5s;
+}
+.About-Side-Menu ul li a:hover
+{
+  color: var(--Primary-Color);
+}
+.About-Side-Menu ul li a i
+{
+  color: var(--Primary-Color);
+  transition: .5s;
+}
+.About-Side-Menu ul li a:hover i
+{
+  color: var(--Subtitle-Font-Color);
+  transform: rotate(180deg);
 }
