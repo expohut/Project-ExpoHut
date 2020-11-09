@@ -1,0 +1,296 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Google Fonts Link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*Variables Declaration*/
+:root
+{
+  --Theme-Color: #3aafa9;
+  --Second-Theme-Color: #77a6f7;
+  --Icon-Color: #3aafa9;
+  --Primary-Color: #e9e9e9;
+  --Second-Primary-Color: #ffffff;
+  --Title-Font-Color: #333;
+  --Subtitle-Font-Color: #333333;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+/*Body Part CSS Code*/
+body
+{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  overflow-x: hidden;
+}
+
+/*Initial Font-Weight*/
+h1,h2,h3,h4,h5,h6
+{
+  font-weight: 900px;
+}
+
+/*Container CSS Code*/
+.Container
+{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*Header Part CSS Code*/
+.Header-Row
+{
+  background: var(--Theme-Color);
+  height: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.Header-Items
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header-Items .Logo
+{
+  flex-basis: 3%;
+  margin-right: 10px;
+}
+.Header-Items .Logo img
+{
+  width: 100%;
+}
+.Header-Items .Nav-Items
+{
+  flex-basis: 87%;
+}
+.Header-Items .Nav-Items ul
+{
+  text-align: right;
+  list-style: none;
+}
+.Header-Items .Nav-Items ul li
+{
+  display: inline-block;
+}
+.Header-Items .Nav-Items ul li a
+{
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--Second-Primary-Color);
+  margin: 0 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/*Banner Part CSS Code*/
+.Banner-Row
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#3aafa98c,#3aafa98c),url("../Assets-Files/Banner.jpg");
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.Banner-Items
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Banner-Left
+{
+  flex-basis: 50%;
+}
+.Banner-Left p
+{
+  text-transform: capitalize;
+  font-weight: 520;
+  letter-spacing: 2px;
+  color: var(--Second-Primary-Color);
+}
+.Banner-Left h3
+{
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--Second-Primary-Color);
+}
+.Banner-Left .btn
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  background: var(--Second-Primary-Color);
+  color: var(--Theme-Color);
+  padding: 15px 30px;
+  width: 188px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-weight: 550;
+}
+.Banner-Right
+{
+  flex-basis: 40%;
+}
+.Banner-Right img
+{
+  width: 100%;
+}
+
+/*Services CSS Code*/
+.Services-Row
+{
+  background: var(--Primary-Color);
+  padding: 50px 0;
+}
+.Title
+{
+  text-align: center;
+  padding: 15px 0;
+}
+.Title h4
+{
+  text-transform: capitalize;
+  font-size: 30px;
+  color: var(--Title-Font-Color);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.Title .Bar
+{
+  width: 200px;
+  height: 8px;
+  background: var(--Primary-Color);
+  margin: 0 auto;
+  box-shadow: 2px 2px 3px #ceced1,
+              -2px -2px 3px #ffffff,
+              inset 1px 1px 2px #ceced1;
+  border-radius: 3px;
+  position: relative;
+}
+.Title .Bar::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 8px;
+  background: var(--Icon-Color);
+  border-radius: 3px;
+  animation: BG-Move 3s linear infinite;
+}
+@keyframes BG-Move 
+{
+  To 
+  {
+    left: 90%;
+  }
+}
+.Title p
+{
+  color: var(--Subtitle-Font-Color);
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.Services-Items
+{
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.Single-Items
+{
+  flex-basis: 22%;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 25px 10px;
+  box-shadow: 2px 2px 3px #ceced1,
+              -2px -2px 3px #ffffff;
+  border-radius: 2px;
+}
+.Single-Items i
+{
+  font-size: 40px;
+  color: var(--Icon-Color);
+  margin-bottom: 20px;
+}
+.Single-Items .Foo-Bar
+{
+  width: 15px;
+  height: 3px;
+  background: var(--Second-Primary-Color);
+  border-radius: 2px;
+  margin: 0 auto 12px auto;
+  transition: .4s;
+}
+.Single-Items:hover .Foo-Bar
+{
+  width: 80px;
+  background: var(--Icon-Color);
+}
+.Single-Items h4
+{
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--Title-Font-Color);
+}
+.Single-Items p
+{
+  color: var(--Subtitle-Font-Color);
+  font-size: 15px;
+}
+.Single-Items a
+{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  color: var(--Theme-Color);
+  background: var(--Primary-Color);
+  line-height: 0px;
+  padding: 15px 10px;
+  border-radius: 3px;
+  margin-top: 15px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px #ceced1,
+              -2px -2px 3px #ffffff;
+  transition: .5s;
+}
+.Single-Items:hover a
+{
+  box-shadow: inset 1px 1px 2px #ceced1,
+             inset -1px -1px 2px #ffffff;
+}
+.Single-Items a i
+{
+  color: var(--Icon-Color);
+  font-size: 14px;
+  line-height: 0px;
+  display: inline;
+  transition: .5s;
+}
