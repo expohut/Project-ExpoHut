@@ -299,7 +299,7 @@ h1,h2,h3,h4,h5,h6
 .About-Expohut
 {
   background: var(--Theme-Color);
-  padding: 25px 0;
+  padding: 35px 0;
 }
 .About-Items
 {
@@ -401,4 +401,78 @@ h1,h2,h3,h4,h5,h6
 {
   color: var(--Subtitle-Font-Color);
   transform: rotate(180deg);
+}
+
+/*Top Footer CSS Code*/
+.Top-Footer
+{
+
+  background: var(--Primary-Color);
+  padding: 50px 0;
+}
+.Top-Footer-Items
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.Footer-Items-one
+{
+  flex-basis: 40%;
+}
+.Footer-Items-one h4,
+.Footer-Items-Two h4,
+.Footer-Items-Three h4
+{
+  text-transform: capitalize;
+  font-size: 25px;
+  color: var(--Title-Font-Color);
+  margin-bottom: 8px;
+}
+.Footer-Items-one p
+{
+  color: var(--Subtitle-Font-Color);
+  font-size: 15px;
+  line-height: 24px;
+}
+.Footer-Items-Two
+{
+  flex-basis: 25%;
+}
+.Footer-Items-Two ul,
+.Footer-Items-Three ul
+{
+  list-style: none;
+}
+.Footer-Items-Two ul li a,
+.Footer-Items-Three ul li a
+{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--Subtitle-Font-Color);
+  font-size: 15px;
+  display: inline-block;
+  margin: 3px 0;
+  transition: .5s;
+}
+.Footer-Items-Two ul li a i,
+.Footer-Items-Three ul li a i
+{
+  color: var(--Icon-Color);
+  transition: .5s;
+}
+.Footer-Items-Two ul li a:hover,
+.Footer-Items-Three ul li a:hover
+{
+  color: var(--Icon-Color);
+}
+.Footer-Items-Two ul li a:hover i,
+.Footer-Items-Three ul li a:hover i
+{
+  transform: rotate(180deg);
+  color: var(--Subtitle-Font-Color);
+}
+.Footer-Items-Three
+{
+  flex-basis: 25%;
 }
