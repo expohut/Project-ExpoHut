@@ -1,0 +1,190 @@
+.container
+{
+    width: 1140px;
+    margin: 0 auto;
+}
+/* Login Part */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+.loginbg{
+    background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.411)),
+     url('../Assets-Files/loginbg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200vh;
+}
+.regbg{
+    background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.411)),
+     url('../Assets-Files/regbg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200vh;
+}
+.MainFrame{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    /* width: 100%;
+    height: 100%; */
+}
+.leftside{
+    display: flex;
+    top: 50%;
+}
+.logo img{
+    width: 60px;
+    flex: 1;
+    margin-top: 250px;
+    position: fixed;
+}
+.logotitle{
+    flex: 1;
+    margin-top: 225px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 70px;
+    position: fixed;
+}
+.rightside{
+    background-color: #fff;
+    /* margin-left: 50px; */
+    width: 500px;
+    height: auto;
+    margin-top: 60px;
+    /* padding: 60px 20px 5px 20px; */
+    padding: 50px 10px;
+}
+.loginsignup-title{
+    border-bottom: 1px solid #f0f0f0;
+    padding: 5px 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #3aafa9;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input, .category{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form-control input:focus{
+    border-color: #777;
+    outline: none;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form button{
+    background-color: #3aafa9;
+    color: #fff;
+    font-family: inherit;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 105%;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.LoginRegiFooter{
+    text-align: center;
+}
+/* Responsive Login */
+/* Media Layout: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1280px){
+    .container
+    {
+        width: 950px;
+    }
+}
+/* Tablet Layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container
+    {
+        width: 750px;
+    }
+    .rightside 
+    {
+        width: 450px;
+    }
+}
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px){
+    .container
+    {
+        width: 320px;
+    }
+    .rightside {
+        padding: 50px 20px;
+    }
+    .logo img {
+        margin-top: 180px;
+        margin-left: 70px;
+        position: relative;
+    }
+    .logotitle {
+        margin-top: 155px;
+        position: relative;
+        margin-left: 5px;
+    }
+    .rightside .forgotpass {
+        font-size: 12px;
+    }
+    .rightside .loginsubmit {
+        font-size: 12px;
+    }
+    .rightside label {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+
