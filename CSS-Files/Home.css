@@ -204,7 +204,7 @@ header ul li a:hover{
 {
   text-decoration: none;
   text-transform: uppercase;
-  background: var(--Second-Primary-Color);
+  background: var(--Primary-color);
   color: var(--Theme-Color);
   padding: 15px 30px;
   width: 188px;
@@ -221,6 +221,8 @@ header ul li a:hover{
 .Banner-Right img
 {
   width: 100%;
+  border: 5px solid #fff;
+  border-radius: 5px;
 }
 
 /*Services CSS Code*/

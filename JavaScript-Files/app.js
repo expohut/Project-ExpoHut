@@ -35,24 +35,24 @@ function signupvalidate(){
         setErrorFor(username,"Username can't be blank");        
     }
     else if(usernameValue.length<3){
-        setErrorFor(username,"Username must be 3 character");
+        setErrorFor(username,"অনুগ্রহ করে ২-২০ অক্ষরের মধ্যে লিখুন");
     }
     else{
         setSuccessFor(username);
     }
     // Email Section
     if(emailValue === ''){
-        setErrorFor(email,"Email can't be blank");
+        setErrorFor(email,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
     }
     else if(!isEmail(emailValue)){
-        setErrorFor(email,"Not a valid email");
+        setErrorFor(email,"অনুগ্রহ করে একটি কার্যকর ইমেইল অ্যাড্রেস লিখুন।");
     }
     else{
         setSuccessFor(email);
     }
     // Mobile Section
     if(mobileValue === ''){
-        setErrorFor(mobile,"Mobile number can't be blank");
+        setErrorFor(mobile,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
     }
     else if(mobileValue.length != 11){
         setErrorFor(mobile,"Enter 11 digit");
@@ -72,14 +72,14 @@ function signupvalidate(){
     }
     //Password Section
     if(passwordValue === ''){
-        setErrorFor(password,"Password can't be blank");
+        setErrorFor(password,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
     }
     else{
         setSuccessFor(password);
     }
     //Address Section\
     if(addressValue === ''){
-        setErrorFor(address,"Address can't be blank");
+        setErrorFor(address,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
     }
     else{
         setSuccessFor(address);
