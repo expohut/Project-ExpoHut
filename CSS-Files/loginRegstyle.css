@@ -11,14 +11,14 @@ body{
 }
 .loginbg{
     background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.411)),
-     url('../Assets-Files/loginbg2.jpg');
+     url('../Assets-Files/regbg.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 200vh;
 }
 .regbg{
     background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.411)),
-     url('../Assets-Files/regbg.jpg');
+     url('../Assets-Files/registerbg.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 200vh;
