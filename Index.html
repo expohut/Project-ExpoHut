@@ -19,27 +19,22 @@
     <!--Vue.js CDN File Linking-->
     <link rel="stylesheet" href="JavaScript-Files/vue.js">
   </head>
-
+  <script>
+    function toggle(){
+        var header = document.getElementById("header");
+        header.classList.toggle('active');
+    }
+</script>
   <body>
-    <header class="Header-Row"> <!--Header Start-->
-      <div class="Container"> <!--Container Start-->
-        <div class="Header-Items"> <!--Header Items Start-->
-          <div class="Logo">
-            <a href="">
-              <img src="Assets-Files/Logo.png" alt="ExpoHut Logo">
-            </a>
-          </div>
-          <nav class="Nav-Items">
-            <ul>
-              <li><a href="">এক্সপোহাট কি?</a></li>
-              <li><a href="Html/login.html" class="btn log">লগ ইন</a></li>
-              <li><a href="Html/regi.html" class="btn sign">সাইন আপ</a></li>
-            </ul>
-          </nav>
-        </div> <!--Header Items End-->
-      </div> <!--Container End-->
-    </header> <!--Header End-->
-
+    <header id="header">
+      <a href="#" class="logo"><img src="Assets-Files/Logo.png" alt=""></a>
+      <ul>
+          <li><a href="#home" onclick="toggle()">এক্সপোহাট কি?</a></li>
+          <li><a href="#about" onclick="toggle()">লগ ইন</a></li>
+          <li><a href="#portfolio" onclick="toggle()">সাইন আপ</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+  </header>
     <section class="Banner-Row"> <!--Banner Start-->
       <div class="Container"> <!--Container Start-->
         <div class="Banner-Items"> <!--Banner Items Start-->
@@ -51,7 +46,7 @@
             <a href="" class="btn">ওয়াচ ভিডিও</a>
           </div>
           <div class="Banner-Right">
-            <img src="Assets-Files/bg.png"  alt="attachment">
+            <img src="Assets-Files/nk.jpg"  alt="attachment">
           </div>
         </div> <!--Banner Items End-->
       </div> <!--Container End-->
@@ -89,7 +84,7 @@
           <div class="Single-Items">
             <i class="fas fa-gifts"></i>
             <div class="Foo-Bar"></div>
-            <h4>অরিগামি</h4>
+            <h4>কুটির শিল্প</h4>
             <p>ঘরে খানিক দৃষ্টিনন্দন আলোকসজ্জা করতে চান যারা, বাতি নিজের হাতে বানিয়ে নেবেন বলে কি কখনো ভেবেছেন?</p>
             <a href="">details <i class="fas fa-arrow-right"></i></a>
           </div>
