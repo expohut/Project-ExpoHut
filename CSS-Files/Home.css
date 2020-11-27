@@ -13,7 +13,7 @@
 {
   --Theme-Color: #17b978;
   --Icon-Color: #17b978;
-  --Primary-color: #f7fafd;
+  --Primary-color: #f4f7fa;
   --Second-Primary-Color: #E9F6FB;
   --Full-White: #FFFFFF;
   --Footer-Background:  #2a363b;
@@ -78,11 +78,15 @@ header ul li{
 }
 header ul li a{
   position: relative;
-  padding: 5px 10px;
+  padding: 5px 15px;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+}
+header ul li a i
+{
+  font-size: 18px;
 }
 header ul li a:hover{
   color: rgb(255, 255, 255);
@@ -90,6 +94,7 @@ header ul li a:hover{
 .toggle{
   display: none;
 }
+/*Header Part Responsive Code*/
 @media(max-width: 992px){
   header ul{
       position: absolute;
@@ -153,7 +158,6 @@ header ul li a:hover{
       transform: rotate(-45deg);
   }
 }
-
 .show{
   display: block;
 }
@@ -296,9 +300,9 @@ header ul li a:hover{
   margin-bottom: 40px;
   padding: 25px 10px;
   background: var(--Primary-color);
-  box-shadow: 4px 4px 8px #eaeaff,
-              -4px -4px 8px #ffffff;
-  border-radius: 2px;
+  box-shadow: 3px 3px 6px #ceced1,
+              -3px -3px 6px #ffffff;
+  border-radius: 3px;
 }
 .Single-Items i
 {
@@ -472,7 +476,6 @@ header ul li a:hover{
 /*Top Footer CSS Code*/
 .Top-Footer
 {
-
   background: var(--Footer-Background);
   padding: 50px 0;
 }
@@ -486,15 +489,77 @@ header ul li a:hover{
 {
   flex-basis: 40%;
 }
+.Footer-Items-one .SocialIcons
+{
+  width: 40%;
+  margin-top: 18px;
+}
+.Footer-Items-one .SocialIcons ul
+{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer-Items-one .SocialIcons ul li a
+{
+  text-decoration: none;
+  display: block;
+  color: var(--Full-White);
+}
+.Footer-Items-one .SocialIcons ul li a i
+{
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  background: var(--Theme-Color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.Footer-Items-one .SocialIcons ul li a i:hover
+{
+  background:  #c3ffe7;
+  color: var(--Theme-Color);
+}
 .Footer-Items-one h4,
 .Footer-Items-Two h4,
 .Footer-Items-Three h4
 {
   text-transform: capitalize;
-  font-size: 25px;
-  /* color: var(--Title-Font-Color); */
-  color: #fff;
+  font-size: 24px;
+  color: var(--Full-White);
   margin-bottom: 8px;
+}
+.Footer-Items-one .Title-Bar,
+.Footer-Items-Two .Title-Bar,
+.Footer-Items-Three .Title-Bar 
+{
+	width: 70px;
+  height: 2px;
+  border-radius: 4px;
+	background: var(--Theme-Color);
+  margin: 8px 0 12px 0;
+  position: relative;
+}
+.Footer-Items-one .Title-Bar::before,
+.Footer-Items-Two .Title-Bar::before,
+.Footer-Items-Three .Title-Bar::before
+{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--Theme-Color);
+  border-radius: 25px;
+  top: -2px;
+  left: 0px;
+  animation: BG-Move 3s linear infinite;
+}
+@keyframes BG-Move {
+  To {
+    left: 90%;
+  }
 }
 .Footer-Items-one p
 {
