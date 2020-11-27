@@ -9,6 +9,20 @@ body{
     padding: 0;
     font-family: poppins;
 }
+:root
+{
+  /* --Theme-Color: #266150; */
+  --Theme-Color: #17b978;
+  --Icon-Color: #17b978;
+  --Primary-color: #f7fafd;
+  --Second-Primary-Color: #E9F6FB;
+  --Full-White: #FFFFFF;
+  --Footer-Background:  #2a363b;
+  --Title-Font-Color: #333;
+  --Title-Font-Colot-Two: #181810;
+  --Subtitle-Font-Color: #333333;
+  --Subtitle-Color: #ececec;
+}
 .loginbg{
     background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.411)),
      url('../Assets-Files/regbg.jpg');
@@ -63,7 +77,7 @@ body{
     padding: 5px 40px;
     text-transform: uppercase;
     font-size: 20px;
-    color: #3aafa9;
+    color: var(--Theme-Color);
 }
 .form{
     padding: 30px 40px;
@@ -121,7 +135,7 @@ body{
     visibility: visible;
 }
 .form button{
-    background-color: #3aafa9;
+    background-color: var(--Theme-Color);
     color: #fff;
     font-family: inherit;
     font-size: 18px;

@@ -73,20 +73,20 @@ function isEmail(email) {
         const LoginEmailValue = LoginEmail.value.trim();
         const LoginPasswordValue = LoginPassword.value.trim();
         if(LoginEmailValue === ''){
-            setErrorFor(LoginEmail,"Email can't be blank");
+            setErrorFor(LoginEmail,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
         }
         else if(!isEmail(LoginEmailValue)){
-            setErrorFor(LoginEmail,"Not a valid email");
+            setErrorFor(LoginEmail,"অনুগ্রহ করে একটি কার্যকর ইমেইল অ্যাড্রেস লিখুন।");
         }
         else{
             setSuccessFor(LoginEmail);
         }
         // Password Section
         if(LoginPasswordValue === ''){
-            setErrorFor(LoginPassword,"Password can't be blank");
+            setErrorFor(LoginPassword,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
         }
         else if(LoginPasswordValue.lenght < 6){
-            setErrorFor(LoginPassword,"Password is too short");
+            setErrorFor(LoginPassword,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
         }
         else{
             setSuccessFor(LoginPassword);

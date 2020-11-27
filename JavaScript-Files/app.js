@@ -32,7 +32,7 @@ function signupvalidate(){
     const addressValue = address.value.trim();
     // Username Section
     if(usernameValue === ''){
-        setErrorFor(username,"Username can't be blank");        
+        setErrorFor(username,"আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");        
     }
     else if(usernameValue.length<3){
         setErrorFor(username,"অনুগ্রহ করে ২-২০ অক্ষরের মধ্যে লিখুন");
